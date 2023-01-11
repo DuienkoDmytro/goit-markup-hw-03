@@ -19,8 +19,8 @@
   --feature-text: #434455;
   --portfolio-btn-background-color: #f4f4fd;
   --portfolio-btn-text-color: #4d5ae5;
-  --hover-portfolio-btn-background-color: #404BBF;
-  --focus-portfolio-btn-background-color: #404BBF;
+  --hover-portfolio-btn-background-color: #404bbf;
+  --focus-portfolio-btn-background-color: #404bbf;
   --hover-portfolio-btn-text-color: #ffffff;
   --focus-portfolio-btn-text-color: #ffffff;
 }
@@ -84,6 +84,7 @@ body {
   list-style-type: none;
 }
 /* .list-item {
+
 } */
 .adress {
   font-weight: 400;
@@ -185,4 +186,48 @@ body {
 .portfolio-btn:focus {
   background: var(--focus-portfolio-btn-background-color);
   color: var(--focus-portfolio-btn-text-color);
+}
+
+/* geometry, placing on the list */
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+}
+ul {
+  padding-left: 0;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  width: 1158px;
+  outline: 1px solid yellow;
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  outline: 1px solid rgb(255, 0, 0);
+}
+.stdrt-flex-usage {
+  display: flex;
+}
+.feature-item {
+}
+
+/* footer elements placing */
+.footer-text-container {
+  padding-top: 100px;
+  padding-left: 156px;
+  padding-bottom: 100px;
+  width: 264px;
+
+  outline: 1px solid green;
+}
+.footer-text {
+  margin-top: 38px;
+  width: 264px;
 }
