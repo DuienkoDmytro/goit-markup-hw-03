@@ -30,6 +30,7 @@ body {
   color: var(--main-text-color);
   background-color: var(--main-background-color);
   font-family: var(--main-font-family);
+  max-width: 1440px;
 }
 
 /* header */
@@ -51,6 +52,8 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-left: 156px;
+  margin-right: 76px;
 }
 .first-part-logo {
   color: var(--logo-first-part-color);
@@ -83,14 +86,28 @@ body {
 .list {
   list-style-type: none;
 }
-/* .list-item {
-
-} */
+.list-worker {
+  text-align: center;
+}
 .adress {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   font-style: normal;
+}
+
+.nav-pages {
+  display: flex;
+  gap: 40px;
+}
+.main-flex-container {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  justify-content: space-evenly;
+}
+.adress-flex-usage {
+  display: flex;
 }
 /* hero section */
 .visually-hidden {
@@ -113,6 +130,12 @@ body {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+}
+.hero-title {
+  padding-top: 188px;
+  padding-bottom: 292px;
+
+  outline: 1px solid greenyellow;
 }
 .button {
   border: none;
@@ -141,6 +164,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-bottom: 72px;
 }
 .third-priourity-title {
   font-weight: 500;
@@ -214,6 +238,7 @@ ul {
 }
 .stdrt-flex-usage {
   display: flex;
+  gap: 24px;
 }
 .feature-item {
 }
@@ -223,11 +248,30 @@ ul {
   padding-top: 100px;
   padding-left: 156px;
   padding-bottom: 100px;
-  width: 264px;
-
-  outline: 1px solid green;
 }
 .footer-text {
   margin-top: 38px;
   width: 264px;
+}
+
+/* main section placing */
+.t-member-card {
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+img {
+  display: block;
+}
+.worker-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+}
+.worker-feature-text {
+  padding-top: 8px;
+  padding-bottom: 32px;
 }
