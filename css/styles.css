@@ -23,6 +23,7 @@
   --focus-portfolio-btn-background-color: #404bbf;
   --hover-portfolio-btn-text-color: #ffffff;
   --focus-portfolio-btn-text-color: #ffffff;
+  --card-border-color: #E7E9FC;
 }
 
 /* body main characters */
@@ -41,6 +42,7 @@ body {
   line-height: 1.5;
 
   letter-spacing: 0.02em;
+  border-bottom: 1px solid #e7e9fc;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -52,7 +54,8 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   text-decoration: none;
-  margin-left: 156px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   margin-right: 76px;
 }
 .first-part-logo {
@@ -85,6 +88,11 @@ body {
 
 .list {
   list-style-type: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.list-item {
+  width: calc((100%-48px) / 3);
 }
 .list-worker {
   text-align: center;
@@ -94,6 +102,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-style: normal;
+  margin-left: auto;
 }
 
 .nav-pages {
@@ -102,12 +111,10 @@ body {
 }
 .main-flex-container {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  justify-content: space-evenly;
 }
 .adress-flex-usage {
   display: flex;
+  gap: 40px;
 }
 /* hero section */
 .visually-hidden {
@@ -130,15 +137,18 @@ body {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero-title {
-  padding-top: 188px;
-  padding-bottom: 292px;
-
-  outline: 1px solid greenyellow;
+  max-width: 745px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+  
 }
 .button {
   border: none;
+  padding: 16px 32px;
 
   background: var(--btn-background-color);
   color: var(--btn-text-color);
@@ -202,6 +212,12 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  align-items: center;
+padding: 12px 24px;
+border: 1px solid #E7E9FC;
+border-radius: 4px;
+margin-top: 96px;
+margin-bottom: 72px;
 }
 .portfolio-btn:hover {
   background: var(--hover-portfolio-btn-background-color);
@@ -229,12 +245,12 @@ ul {
   margin-right: auto;
   padding: 0 15px;
   width: 1158px;
-  outline: 1px solid yellow;
+  
 }
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
-  outline: 1px solid rgb(255, 0, 0);
+  
 }
 .stdrt-flex-usage {
   display: flex;
@@ -254,12 +270,15 @@ ul {
   width: 264px;
 }
 
-/* main section placing */
+/* main index section placing */
 .t-member-card {
   background: #ffffff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  border: 1px solid var(--card-border-color);
+width: calc((100%-24*3) / 4);
+
 }
 img {
   display: block;
@@ -274,4 +293,35 @@ img {
 .worker-feature-text {
   padding-top: 8px;
   padding-bottom: 32px;
+}
+/* portfolio placing */
+.list-btn{
+list-style-type: none;
+display: flex;
+gap: 24px; 
+justify-content: center;
+align-items: center;
+}
+.using-area{
+list-style-type: none;
+display: flex;
+flex-wrap: wrap;
+column-gap: 24px;
+row-gap: 48px;
+
+
+}
+.using-area-card {
+    width: calc((100% - 48px) / 3);
+    border: 1px solid var(--card-border-color); 
+  
+}
+.portfolio-card-title {
+padding-top: 32px;
+padding-left: 16px;
+}
+.portfolio-card-text{
+padding-left: 16px;
+padding-top: 8px;
+padding-bottom: 32px;  
 }
