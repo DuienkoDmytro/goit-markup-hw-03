@@ -38,8 +38,7 @@ body {
 
 /* header */
 .header {
-  border-bottom: 1px solid VAR(--header-border-bottom);
-line-height: 1.5;
+ line-height: 1.5;
 }
 
 .header-list{
@@ -91,8 +90,11 @@ line-height: 1.5;
 .list {
   list-style-type: none;
  }
+.list-item-comp-features {
+  flex-basis: calc((100% - 3 * 24px ) / 4);
+}
 .list-item {
-  flex-basis: calc((100% - 3 * 24 px ) / 4);
+  flex-basis: calc((100% - 2 * 24px ) / 3);
 }
 .list-worker {
   text-align: center;
@@ -150,11 +152,8 @@ line-height: 1.5;
   font-size: 56px;
     line-height: 1.07;
   
-
-
-
-  
 }
+
 .button {
   border: none;
   padding: 16px 32px;
@@ -220,6 +219,12 @@ line-height: 1.5;
   
   margin-right: 76px;
 }
+.footer-text {
+  margin-top: 16px;
+  width: 264px;
+  line-height: 1.5;
+letter-spacing: 0.02em;
+}
 
 .second-part-logo {
   color: var(--logo-second-part-color);
@@ -229,6 +234,14 @@ line-height: 1.5;
  }
 
 /* -----------------------page-portfolio--------------------- */
+.portfolio-header {
+  border-bottom: 1px solid VAR(--header-border-bottom);
+line-height: 1.5;
+}
+.portfolio-section{
+   padding-bottom: 120px;
+   padding-top: 96px;
+}
 .portfolio-btn {
 
   background: var(--portfolio-btn-background-color);
@@ -297,11 +310,11 @@ gap:24px;
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   border: 1px solid var(--card-border-color);
-flex-basis: calc((100% - 24 * 3)/4) ;
+flex-basis: calc((100% - 24px * 3)/4) ;
 
 }
 img {
-  display: block;
+ display: block;
   max-width: 100%; 
   height: auto;
 }
@@ -322,10 +335,7 @@ img {
 }
 
 
-.footer-text {
-  margin-top: 38px;
-  width: 264px;
-}
+
 
 /* main index section placing */
 
@@ -337,7 +347,7 @@ gap: 24px;
 justify-content: center;
 align-items: center;
 margin-bottom: 72px;
-margin-top: 96px;
+
 }
 .using-area{
 list-style-type: none;
@@ -345,12 +355,10 @@ display: flex;
 flex-wrap: wrap;
 column-gap: 24px;
 row-gap: 48px;
-
-
 }
-.using-area-card {
-  flex-basis: calc((100% - 48px) / 3);
-  border-left: 1px solid var(--card-border-color); 
+
+.using-area-card-text {
+    border-left: 1px solid var(--card-border-color); 
   border-right: 1px solid var(--card-border-color);
   border-bottom: 1px solid var(--card-border-color);
   padding-left: 16px;
@@ -358,7 +366,9 @@ row-gap: 48px;
   padding-bottom: 32px;
   
 }
-
+.using-area-card {
+ flex-basis: calc((100% - 2 * 24px) / 3); 
+}
 .feature-text-portfolio-card {
   color: var(--feature-text);
   font-size: 16px;
